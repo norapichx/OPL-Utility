@@ -15,8 +15,4 @@ while wait(1) do
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,-5)
             end
         end
-    local args = {
-    [1] = "NOPLS"
-    }
-    game:GetService("Players").LocalPlayer.Character.Drown:FireServer(unpack(args))
-end
+    end
