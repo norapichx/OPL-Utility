@@ -1,3 +1,5 @@
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/norapichx/opl/main/blue')))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/AltsegoD/script/master/OnePieceLegendary.lua')))()
 local VirtualUser=game:service'VirtualUser'
 game:service'Players'.LocalPlayer.Idled:connect(function()
 VirtualUser:CaptureController()
@@ -9,8 +11,6 @@ for i,v in pairs(workspace:GetDescendants()) do
     v.Material = "SmoothPlastic"
     end
     end
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/norapichx/opl/main/blue')))()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/AltsegoD/script/master/OnePieceLegendary.lua')))()
 while wait(1) do
     for i,v in pairs(game.Workspace:GetDescendants()) do
         if v.Name == "APOLLO_W07" then
