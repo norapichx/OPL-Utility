@@ -9,6 +9,8 @@ for i,v in pairs(workspace:GetDescendants()) do
     v.Material = "SmoothPlastic"
     end
     end
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/norapichx/opl/main/blue')))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/AltsegoD/script/master/OnePieceLegendary.lua')))()
 while wait(1) do
     for i,v in pairs(game.Workspace:GetDescendants()) do
         if v.Name == "APOLLO_W07" then
@@ -20,5 +22,3 @@ while wait(1) do
     }
     game:GetService("Players").LocalPlayer.Character.Drown:FireServer(unpack(args))
 end
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/norapichx/opl/main/blue')))()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/AltsegoD/script/master/OnePieceLegendary.lua')))()
