@@ -11,7 +11,7 @@ for i,v in pairs(workspace:GetDescendants()) do
     end
 while wait(1) do
     for i,v in pairs(game.Workspace:GetDescendants()) do
-        if v.Name == "APOLLO_W07" then
+        if v.Name == "EGVx_IlI" then
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,-5)
             end
         end
