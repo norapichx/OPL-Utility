@@ -9,7 +9,7 @@ for i,v in pairs(workspace:GetDescendants()) do
     v.Material = "SmoothPlastic"
     end
     end
-while wait(1) do
+while wait() do
     for i,v in pairs(game.Workspace:GetDescendants()) do
         if v.Name == "EGVx_IlI" then
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,-4)
