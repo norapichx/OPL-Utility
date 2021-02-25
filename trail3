@@ -1,0 +1,18 @@
+local VirtualUser=game:service'VirtualUser'
+game:service'Players'.LocalPlayer.Idled:connect(function()
+VirtualUser:CaptureController()
+VirtualUser:ClickButton2(Vector2.new())
+end)
+print'Anti Afk ran'
+for i,v in pairs(workspace:GetDescendants()) do
+    if v.ClassName == "Part" or v.ClassName == "WedgePart" then
+    v.Material = "SmoothPlastic"
+    end
+    end
+while wait(1) do
+    for i,v in pairs(game.Workspace:GetDescendants()) do
+        if v.Name == "EGVx_IlI" then
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,-9)
+            end
+        end
+    end
